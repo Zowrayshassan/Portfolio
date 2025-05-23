@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@layer base {
+  body{
+  @apply bg-black text-white relative font-sans h-screen ;
+  }
+} 
+
+
+@layer components{
+  .introducing-container{
+    position: absolute;
+    inset: 0 0 0 0;
+    z-index: -1;
+    border-radius: 20px;
+    background: linear-gradient(45deg,#9657de,#383abe,#389ec9,#5240c4,#9657de);
+  }
+}
