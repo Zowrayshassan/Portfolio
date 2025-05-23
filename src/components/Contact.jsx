@@ -46,7 +46,7 @@ const Contact = () => {
       animate="visible"
       variants={fadeIn}
     >
-      <motion.div className="w-full max-w-4xl bg-[#111] p-6 md:p-10 rounded-xl shadow-xl border border-gray-700">
+      <motion.div className="w-full max-w-xl bg-[#111] p-6 md:p-10 rounded-xl shadow-xl border border-gray-700">
         <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text">
           Contact Me
         </h2>
@@ -99,12 +99,12 @@ const Contact = () => {
                 <label className="block mb-1 text-sm font-medium">Message</label>
                 <textarea
                   name="message"
-                  rows="8"
+                  rows={3} // semantic rows attribute for small height
                   required
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Type your message here..."
-                  className="w-full h-56 p-3 rounded-md bg-gray-900 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-red-500"
+                  className="w-full h-16 md:h-56 p-3 rounded-md bg-gray-900 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-red-500"
                 />
               </div>
 
